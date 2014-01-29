@@ -1,0 +1,7 @@
+<%= form_for @activity do |f| %>
+  <%= f.text_field :name, placeholder: "product name" %>
+  <%= f.submit %>
+<% end %>
+
+<!-- partial for product  -->
+<li><%=link_to product.name, product_path(product) %>  | <%= link_to "edit", edit_product_path(product), method: :get %> | <%= link_to "delete", product_path(product), method: :delete%> </li>

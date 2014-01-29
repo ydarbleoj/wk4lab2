@@ -1,0 +1,11 @@
+<div class="container">
+	<h3>Home Page</h3>
+	<ul>
+	  <% @locations.each do |c| %>
+	    <li>
+	    	<!-- c in course_path refers to id ... implicitly   -->
+	      <%= link_to c.name, location_path(c) %>
+	    </li>
+	  <% end %>
+	</ul>
+</div>

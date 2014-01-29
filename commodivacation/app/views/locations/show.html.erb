@@ -1,0 +1,17 @@
+<div class="container">
+	<h4><%= @location.name %></h4>
+	<ul>
+	<% @activites.each do |a| %>
+	  <li>
+	    <%= a.name %> 
+	  </li>
+	<% end %>
+
+    <%= link_to "Index" %>
+
+
+<h1><%= @location.name %></h1>
+
+<%= button_to "delete this location", location_path, method: :delete %> <%= button_to "edit this location", edit_location_path, method: :get %>
+<h3> activities in this location: </h3>
+</div>
